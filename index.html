@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas D
+        </h1>
+        <p>
+            Sistem informasi data mahasiswa teknik informatika unila
+        </p>
+        <img src="D:\tugas kuleah\Prak pemweb\Judul 1\testfoto.png" alt="" width="100" height="100">
+    </header>
+    <hr>
+    <nav><ul>
+        <li><a href="#informasi">Infromasi</a></li>
+        <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+        <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+    </ul></nav>
+    <hr>
+        <main>
+            <section id="#informasi">
+                <h2>
+                    Informasi Sistem
+                </h2>
+                <p>Informasi Sistem Data Mahasiswa Teknik Infromatika</p>
+                <article>
+                    <h3>Infromasi Bebas</h3>
+                    <p>Infromasi Bebas minimal terdiri dari sub judul</p>
+                </article>
+            </section>
+    <hr>
+
+    <section id="daftar-mahasiswa">
+        <h2>Daftar Mahasiswa Aktif</h2>
+        <p>Daftar Mahasiswa Aktif Informatika</p>
+        <table border="1" cellpadding="8" cellspasing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>NPM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Program Studi</th>
+                    <th>Angkatan</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="D:\tugas kuleah\Prak pemweb\Judul 1\Untitled design.png" alt="" width="100" height="100"></td>
+                    <td>2415061078</td>
+                    <td>Nizam Al- Gifari</td>
+                    <td>Teknik Informatika</td>
+                    <td>2024</td>
+                    <td>2415061078@student.unila.ac.id</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="D:\tugas kuleah\Prak pemweb\Judul 1\testfoto.png" alt="" width="100" height="100"></td>
+                    <td>2415061078</td>
+                    <td>Nizam Al- Gifari</td>
+                    <td>Teknik Informatika</td>
+                    <td>2024</td>
+                    <td>2415061078@student.unila.ac.id</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="D:\tugas kuleah\Prak pemweb\Judul 1\Untitled design.png" alt="" width="100" height="100"></td>
+                    <td>2415061078</td>
+                    <td>Nizam Al- Gifari</td>
+                    <td>Teknik Informatika</td>
+                    <td>2024</td>
+                    <td>2415061078@student.unila.ac.id</td>
+                </tr>
+            </tbody>
+        </table>
+    </section> <hr>
+
+    <section id="form-tambah">
+        <h2>Tambah Mahasiswa Baru</h2>
+        <p>Tambah Mahasiswa Baru Teknik Infromatika</p>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Tambah Data</legend>
+            <label for="npm">Nomor Pokok Mahasiswa(NPM)</label>
+            <br>
+            <input type="text" id="npm" name="npm" placeholder="2415061078" required pattern="[0-9] {8,12}" title="NPM harus berupa angka 8-12 digit"> <br> 
+            <small></small>
+
+            <label for="nama">Nama Lengkap</label>
+            <br>
+            <input type="text" id="nama" name="nama" placeholder="Contoh : Nizam Al- Gifari" required minlength="3" maxlength="100"> <br> 
+            <small></small>
+
+            <label for="program_studi">Program Studi: </label>
+            <br>
+            <select name="program_studi" id="program_studi" required>
+                <option value=""></option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+            </select><br> 
+            <small></small>
+
+            <label for="angkatan">Tahun Angkatan</label>
+            <br>
+            <input type="number" id="angkatan" name="angkatan" placeholder="2024" required min="2018" max="2026" > <br> 
+            <small></small>
+
+            <label for="email">Alamat Email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required > <br> 
+            <small></small>
+
+            <button type="submit">Simpan Data Mahasiswa</button>
+            <button type="reset">Reset Formulir</button>
+            </fieldset>
+        </form>
+    </section>
+
+
+        </main>
+</body>
+</html>
